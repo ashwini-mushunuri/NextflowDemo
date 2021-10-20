@@ -1,5 +1,7 @@
 curl -fsSL https://get.nextflow.io | bash
 sudo apt install fastqc hisat2 samtools igv -y
+sudo pip3 install RSeQC
+sudo pip3 install HTSeq
 
 mkdir tmp
 cd tmp
@@ -22,5 +24,4 @@ EOF
 
 sudo apt install ./sra-toolkit_2.9.3+dfsg-1build2_amd64.deb -y
 fastq-dump --version
-rm -rf tmp
-pip install cutadapt
+rm -rf tmppip install cutadapt
